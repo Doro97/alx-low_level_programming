@@ -1,21 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - Prints a list of numbers
- *
- * Description: The numbers are all single digits
- * Return: Always(0) Success
- */
-
+* main - Print the alphabet in lowercase letters in reverse
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	char c = 'z';
+	char letter;
 
-	while (c >= 'a')
-	{
-		putchar(c);
-		c--;
-	}
+	for (letter = 'z'; letter >= 'a'; letter--)
+	putchar(letter);
+
 	putchar('\n');
 
 	return (0);
