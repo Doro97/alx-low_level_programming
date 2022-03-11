@@ -1,12 +1,8 @@
 #include <stdio.h>
-
 /**
- * main - Print single digit numbers in the format
- *
- * Description: Separated by commas
- * Return: Always(0) Success
+ * main - prints out all the numbers under 10 with a ,
+ * Return: 0
  */
-
 int main(void)
 {
 	int i;
@@ -14,13 +10,12 @@ int main(void)
 	for (i = 48; i < 58; i++)
 	{
 		putchar(i);
-	}
-	if (i != 57)
-	{
-		putchar(',');
-		putchar(' ');
+		if (i != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
-
 	return (0);
 }
