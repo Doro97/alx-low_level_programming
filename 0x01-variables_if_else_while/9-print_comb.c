@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints out all the numbers under 10 with a ,
+ * Description: separated by commas
  * Return: 0
  */
 int main(void)
