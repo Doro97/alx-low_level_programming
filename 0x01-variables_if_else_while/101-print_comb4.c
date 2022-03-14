@@ -1,29 +1,41 @@
 #include <stdio.h>
 
-int main()
+/**
+ * main - prints out all possible combos of 3 digits
+ * Return: 0
+ */
+int main(void)
 {
-    int a, b, c;
-    
-	for (int i = 0; i <= 9; i++)
-	{
-	    for (int j = i + 1; j <= 9; j++)
-	    {
-	        for (int k = j + 1; k <= 9; k++)
-	        {
-	            putchar(i + '0');
-	            putchar(j + '0');
-	            putchar(k + '0');
-	            if (((i * 100) + (j * 10) + k) < 789)
-	            {
-	                putchar(',');
-                    putchar(' ');
 
-	            }
-	        }
-	    }
+	int i, j, k;
+
+	for (i = 48; i < 58; i++)
+	{
+		for (j = i; j < 58; j++)
+		{
+			for (k = j; k < 58; k++)
+			{
+				if (i == j || j == k || i == k)
+				{
+					continue;
+				}
+				putchar(i);
+				putchar(j);
+				putchar(k);
+
+				if (i == 55 && j == 56 && k == 57)
+				{
+					break;
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
+
+			}
+		}
 	}
 	putchar('\n');
-    return 0;
+	return (0);
 }
-
-
