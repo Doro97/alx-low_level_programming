@@ -1,18 +1,15 @@
 #include "main.h"
-#include <unistd.h>
+
 /**
- *_puts - prints a string, to stdout
- *@str: value to be evaluate.
- *Return: not.
+ * _puts - prints a string followed by a new line to stdout
+ * @str: string to be printed
  */
 void _puts(char *str)
 {
-	int l = 0;
-
-	while (*(str + l) != '\0')
+	while (*str)
 	{
-		_putchar(str[l]);
-		l++;
+		_putchar(*str);
+		str++;
 	}
 	_putchar('\n');
 }

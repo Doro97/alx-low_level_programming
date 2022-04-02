@@ -1,21 +1,12 @@
 #include "main.h"
-
 /**
- * _isalpha - checks for alphabetic character..
- *
- * @c: is c an integer argument
- *
- * Return: Always 0.
+ * _isalpha - returns 1 if c is a letter
+ * @c: integer to be tested
+ * Return: 1 or 0
  */
-
 int _isalpha(int c)
 {
-
-	if (c >= 97 && c <= 122)
-	{
-		return (1);
-	}
-	else if (c >= 65 && c <= 90)
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 	{
 		return (1);
 	}
